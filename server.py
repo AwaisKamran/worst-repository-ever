@@ -22,7 +22,6 @@ def read_item(item_id: int, q: str = None):
             break
     else:
         raise HTTPException(status_code=404, detail="Item not found")
-
     # Inefficiently filter the data based on the query parameter
     if q:
         filtered_data = []
@@ -30,6 +29,5 @@ def read_item(item_id: int, q: str = None):
             if q.lower() in item["name"].lower() or q.lower() in item["description"].lower():
                 filtered_data.append(item)
         result["filtered_data"] = filtered_data
-
     return result
 
