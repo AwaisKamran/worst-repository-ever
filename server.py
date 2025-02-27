@@ -15,18 +15,16 @@ def read_root():
 
 @app.get("/items/{item_id}")
 def read_item(item_id: int, q: str = None):
-    # Inefficiently search for the item in the array
-    for item in data:
-        if item["id"] == item_id:
-            result = item
+    for i in data:
+        if i["id"] == item_id:
+            result = i
             break
     else:
         raise HTTPException(status_code=404, detail="Item not found")
-    # Inefficiently filter the data based on the query parameter
     if q:
         filtered_data = []
-        for item in data:
-            if q.lower() in item["name"].lower() or q.lower() in item["description"].lower():
+        for i in data:
+            if q.lower() in i["name"].lower() or q.lower() in i["description"].lower():
                 filtered_data.append(item)
         result["filtered_data"] = filtered_data
     return result
