@@ -1,0 +1,80 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.whl
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as a user you should not edit
+#  them directly, but in the script that does it for you.
+#  - In this case you can ignore the generated files.
+#  - If they are not written for you, and you have to edit them manually,
+#    then do not ignore them.
+#    (Also, use the script method to generate them, as it's much easier).
+# .spec
+
+# IDE files
+.idea/
+*.iml
+.project
+.cproject
+
+# Environments
+.env
+.venv
+venv/
+env/
+
+# Test and coverage reports
+.coverage
+coverage/
+htmlcov/
+.tox/
+.nox/
+nosetests.xml
+coverage.xml
+*.cover
+*.prof
+
+# Translations
+*.mo
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Python specific temp files
+*.pyc
+*.pyd
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# temp files
+*.tmp
